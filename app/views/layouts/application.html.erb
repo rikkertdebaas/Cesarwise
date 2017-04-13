@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cesar</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<div class="container">
+    <ul class="nav nav-tabs">
+    <li><%= link_to "INDEX", welcome_index_path %></li>
+    <li><%= link_to "OVER", welcome_over_path %></li>
+    <li><%= link_to "LOCATIE", welcome_locatie_path %></li>
+    <li><%= link_to "DIENSTEN", welcome_diensten_path %></li>
+    <li><%= link_to "MAAK EEN AFSPRAAK", welcome_afspraak_path %></li>
+</ul>
+</div>
+    <%= yield %>
+  </body>
+</html>
